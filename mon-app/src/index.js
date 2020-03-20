@@ -10,3 +10,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+global.web3 = new Web3(
+	new Web3(new Web3.providers.HttpProvider('https://<CONNECTION URL>',0,{Authorization: 'Basic <CONNECTION HEADERS'}))
+)
